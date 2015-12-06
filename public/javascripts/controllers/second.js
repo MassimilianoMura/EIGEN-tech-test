@@ -138,6 +138,7 @@ MassiTechTest.controller('secondCtrl', function($scope) {
   },
   'options': {
     'title': 'Total fruit count per region',
+    'legend': { position: 'top' },
     'isStacked': 'true',
     'fill': 20,
     'displayExactValues': true,
