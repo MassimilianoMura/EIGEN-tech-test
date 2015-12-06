@@ -1,4 +1,4 @@
-# EIGEN - tech test
+# EIGEN - techical test
 
 [![Build Status](https://travis-ci.org/MassimilianoMura/EIGEN-tech-test.svg)](https://travis-ci.org/MassimilianoMura/EIGEN-tech-test)
 [![Code Climate](https://codeclimate.com/github/MassimilianoMura/EIGEN-tech-test/badges/gpa.svg)](https://codeclimate.com/github/MassimilianoMura/EIGEN-tech-test)
