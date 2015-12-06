@@ -1,0 +1,119 @@
+<h3>Tech test, first question</h3>
+
+<p>Create a profile box containing education and experience where the forms can be added and removed</p>
+
+<ul>
+  <li>Add button creates an empty form for the user to fill up</li>
+  <li>Remove button removes the already filled form</li>
+  <li>Year fields are drop-down, other fields are text boxes</li>
+</ul></br></br>
+
+
+
+<section class="container col-sm-9">
+  <div class="header-div col-sm-9">
+    <h4>Education</h4>
+    <button class="btn btn-primary add-form" ng-click="addEdu()">Add Education</button>
+  </div>
+
+<div>
+  <form class="form-horizontal col-sm-9">
+    <div ng-repeat="education in educations">
+
+      <div class="body-div container col-sm-12">
+
+        <div class="inputs-wrap">
+
+          <div class="form-group">
+            <label for="school" class="col-sm-3 control-label">School</label>
+            <div class="col-sm-9">
+              <input type="email" class="form-control" id="school" placeholder="School">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="course" class="col-sm-3 control-label">Course</label>
+            <div class="col-sm-9">
+              <input type="course" class="form-control" id="course" placeholder="Course">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="year" class="col-sm-3 control-label">Select year:</label>
+              <div class="col-sm-9">
+                <select class="form-control placeholder" id="year">
+                  <option selected disabled>Please select</option>
+                  <option>2010</option>
+                  <option>2011</option>
+                  <option>2012</option>
+                  <option>2013</option>
+                  <option>2014</option>
+                  <option>2015</option>
+                </select>
+              </div>
+          </div>
+
+        </div>
+
+        <button class="btn btn-danger remove-button" ng-click="removeEdu($index)">Remove current education</button>
+
+      </div>
+
+    </div>
+  </form>
+</section>
+
+
+<section class="container col-sm-9">
+  <div class="header-div col-sm-9">
+    <h4>Experience</h4>
+    <button class="btn btn-primary add-form" ng-click="addExp()">Add Experience</button>
+  </div>
+
+<div>
+  <form class="form-horizontal col-sm-9">
+    <div ng-repeat="experience in experiences">
+
+      <div class="body-div container col-sm-12">
+
+        <div class="inputs-wrap">
+
+          <div class="form-group">
+            <label for="school" class="col-sm-3 control-label">Company</label>
+            <div class="col-sm-9">
+              <input type="email" class="form-control" id="company" placeholder="Company">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="course" class="col-sm-3 control-label">Position</label>
+            <div class="col-sm-9">
+              <input type="course" class="form-control" id="position" placeholder="Position">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="year" class="col-sm-3 control-label">Select year:</label>
+              <div class="col-sm-9">
+                <select class="form-control placeholder" id="year">
+                  <option selected disabled>Please select</option>
+                  <option>2010</option>
+                  <option>2011</option>
+                  <option>2012</option>
+                  <option>2013</option>
+                  <option>2014</option>
+                  <option>2015</option>
+                </select>
+              </div>
+          </div>
+
+        </div>
+
+        <button class="btn btn-danger remove-button" ng-click="removeExp($index)">Remove current experience</button>
+
+      </div>
+
+    </div>
+  </form>
+</section>
+
